@@ -12,3 +12,5 @@
 `git pull`
 `git create branch`
 `git merge branches`
+
+""" fetch command updating"""
