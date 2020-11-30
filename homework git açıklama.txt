@@ -1,0 +1,28 @@
+git_status yaptıktan sonra projede commit edilecek dosya yok ama geçiş bölgesine eklenecek txt'lerimiz var.
+file1.txt sayısını commit edilecek dosya olarak ekledik.Yeşil renkte gösterilen dosya commit edilmeye hazırdır.
+Commit komudu ile commit ederken bir mesaj verebiliyoruz.
+2 tane file txt'imiz var commit edilmiş.
+Ben manuel olarak file1.txt içindeki yazıyı değiştireceğim hata yapıyormuşum gibi.
+git status dedikten sonra bize file1.txt'de bir değişiklik olduğunu söylüyor.
+Sonra add diyip staging area kısmına geldik
+modified edilmiş txt dosyamızı görüyoruz bunu undo yapmak için ilk önce reset komutunu kullanarak
+commit edilmekten çıkarıyoruz
+sonra git checkout -- file1.txt diyerek ypaılan değişikliği geri almış oluyoruz.
+
+reset komutunu kullanmadan önce bir kaç tane commit olayı gerçekleştirdim.
+reset soft komutnu kullanarak 04b716b numaralı commite geri döndüm ama soft olduğu için file2.txt oluşturuldu ve commit için
+staging areada bekliyor kısma geri döndürür bizi.
+
+reset mixed komutu ile tekrar 04b716b numaralı commite geri döndüm ama mixed olduğu için
+resetlemeden önceki head commitleri unstaged oldu.Bu demek oluyor ki tekrar staging area'ya git add komutu
+ile eklemem lazım.
+
+reset hard komutu ile tekrar 04b716b numaralı commite geri döndüm ama hard olduğu için 
+resetlemeden önceki head commit olan file2 dosyası kopyalanma işlemi tamamen working directoryde silindi.
+
+
+git checkout discard changes in the working directory.
+2 tane dosya ekledim.
+newfile2.txt'inin içini değiştirdim.Sonra git status dediğim zaman değişiklik olduğunu bana söyledi
+ben de git checkout newfile2.txt diyerek working areada bu değişikliği geri aldım.yani dosyanın içi
+modified edilmeden önceki halidir.
