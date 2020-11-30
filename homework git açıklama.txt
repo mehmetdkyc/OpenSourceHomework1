@@ -34,7 +34,7 @@ ise bu dosyayı göremem.
 Şimdi bu iki dalı mergeleyerek yani birleştirme işlemi yapacağım.
 merge pull request ile 2 dalı birleştiriyorum.
 Githubta eklenen dosyalar local machinede olmaz.Onu çekmemiz için pull komutunu kullanıyoruz.
-Githubta cranch oluşturduk ama bu consoleda yani local machinede gözükmez.
+Githubta branch oluşturduk ama bu consoleda yani local machinede gözükmez.
 Şimdi console sayesinde branch oluşturucağız
 
 git remote add githubRepo link sayesinde commite linkimizi ekledik ve bizim masterı pushlayarak github'a
