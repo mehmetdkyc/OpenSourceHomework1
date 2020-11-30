@@ -26,3 +26,18 @@ git checkout discard changes in the working directory.
 newfile2.txt'inin içini değiştirdim.Sonra git status dediğim zaman değişiklik olduğunu bana söyledi
 ben de git checkout newfile2.txt diyerek working areada bu değişikliği geri aldım.yani dosyanın içi
 modified edilmeden önceki halidir.
+
+
+master 2 adında ikinci bir branch oluşturduk şuan master ve master2 aynı dosyaları içeriyor.
+master 2 branchinde dosya1 adlı bir şey oluşturdum ve bunu sadece master2 branchine görebilirim.Master1'e geçtiğimde
+ise bu dosyayı göremem.
+Şimdi bu iki dalı mergeleyerek yani birleştirme işlemi yapacağım.
+merge pull request ile 2 dalı birleştiriyorum.
+Githubta eklenen dosyalar local machinede olmaz.Onu çekmemiz için pull komutunu kullanıyoruz.
+Githubta cranch oluşturduk ama bu consoleda yani local machinede gözükmez.
+Şimdi console sayesinde branch oluşturucağız
+
+git remote add githubRepo link sayesinde commite linkimizi ekledik ve bizim masterı pushlayarak github'a
+bağlanmayı sağladık bizden kullanıcı adı şifre istedikten sonra bağlanmış olduk.Sonra dosyalarda değişiklik yaptığım zaman
+tekrar git add . diyip commitledikten sonra
+tekrar git push -u githubRepo master diyerek tüm dosyaları repostoriye atıyoruz.
