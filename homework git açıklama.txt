@@ -41,3 +41,6 @@ git remote add githubRepo link sayesinde commite linkimizi ekledik ve bizim mast
 bağlanmayı sağladık bizden kullanıcı adı şifre istedikten sonra bağlanmış olduk.Sonra dosyalarda değişiklik yaptığım zaman
 tekrar git add . diyip commitledikten sonra
 tekrar git push -u githubRepo master diyerek tüm dosyaları repostoriye atıyoruz.
+ pull - fetch : ikiside çalışma alanlarımızı güncel tutmaktır. pull işilemi ile uzaktaki repostoriydeki dosyaları
+local machine çağırı mergeliyor ama fetch sadece dosyaları güncellememiz gerektiğini söyler ve mergelemez
+git merge diyerek branch ismini yazıp mergeleriz.
